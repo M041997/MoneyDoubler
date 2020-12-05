@@ -1,0 +1,29 @@
+
+#include <iostream>
+
+using namespace std;
+#include <math.h>     
+
+float moneystart;
+float days;
+float total;
+
+
+int main()
+{   #Enter the amount of money you'd like to start with
+    cout << " How much money did you start with?" << endl << "$";
+    cin >> moneystart;
+    #The number of days. Each day you double your money
+    cout << "Enter the number of days " << endl;
+    cin >> days;
+    #The math
+    cout << "If you had " << moneystart << " and doubled it everyday for " << endl;
+    cout << "for " << days << " days. Your new total would be " << endl;
+    
+    total = moneystart * pow(2, days);
+    #The total amount of money you'd have after doubling it everyday for the days entered above
+    cout << total << " after " << days << " days";
+
+    return 0;
+}
+
